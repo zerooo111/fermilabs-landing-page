@@ -2,52 +2,34 @@
 
 @theme {
   /* Theme colors */
-  --color-primary: #347367;
-  --color-primary-light: #a3d9ba;
+  --color-primary: #21544e;
+  --color-primary-light: #a3dabc;
   --color-primary-dark: #113030;
 
-  --color-secondary: #dfb670;
-  --color-secondary-light: #f2e8c9;
-  --color-secondary-dark: #c99e53;
-
-  --font-antiqua: var(--font-antiqua);
-  --font-geist-sans: var(--font-geist-sans);
+  --color-secondary-light: #f2e9ca;
+  --color-secondary: #e1b770;
+  --color-secondary-dark: #2a2011;
 }
 
 @layer base {
-  body {
-    @apply text-zinc-900 font-geist-sans;
-  }
-
-  .navlink {
-    @apply text-primary-light px-5 py-1.5 text-lg tracking-wider;
-    @apply hover:text-secondary hover:bg-primary/20;
-    @apply rounded-full  underline-offset-4 duration-200 ease-out hover:ring-1 ring-secondary;
-  }
-
   .btn {
     @apply px-4 py-2 rounded-full  font-medium cursor-pointer;
     @apply flex items-center justify-center;
     @apply transition-all duration-300 ease-out;
     @apply hover:shadow-lg  hover:scale-[1.02] active:scale-98 hover:brightness-125;
   }
-
-  .feature-card {
-    @apply bg-white/80 backdrop-blur-lg p-8 rounded-lg border border-primary/20 ;
-    @apply hover:border-primary/40 transition-all duration-300;
-    @apply hover:shadow-lg hover:-translate-y-1;
-  }
 }
 
 @keyframes spin {
-  from {
-    transform: rotate(0deg);
+  0% {
+    rotate: 0%;
   }
-  to {
-    transform: rotate(360deg);
+
+  100% {
+    rotate: 360%;
   }
 }
 
 .animate-spin-slow {
-  animation: spin 20s linear infinite;
+  animation: infinite 10s;
 }
