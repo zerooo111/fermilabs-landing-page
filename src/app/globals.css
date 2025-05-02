@@ -11,6 +11,7 @@
   --color-secondary-dark: #2a2011;
   --animate-grid: grid 30s linear infinite;
 
+  /* Animations */
   @keyframes grid {
     0% {
       transform: translateY(-50%);
@@ -30,6 +31,7 @@
   }
 }
 
+
 @keyframes spin {
   0% {
     rotate: 0%;
@@ -41,5 +43,5 @@
 }
 
 .animate-spin-slow {
-  animation: infinite 10s;
+  animation: spin infinite 10s;
 }
