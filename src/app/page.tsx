@@ -1,13 +1,17 @@
-import { Header } from "@/components/Header";
-import { HeroSection } from "@/components/HeroSection";
-import { FeatureSection } from "@/components/FeatureSection";
+"use client";
+
+import GridAnimation from "@/components/GridAnimation";
 
 export default function Home() {
   return (
-    <main className="relative flex flex-col min-h-screen">
-      <Header />
-      <HeroSection />
-      <FeatureSection />
+    <main className="relative bg-secondary-light flex flex-col min-h-screen">
+      <GridAnimation />
+      <section className="flex flex-col items-center justify-center h-screen">
+        <h1 className="text-4xl font-bold text-center">
+          Ultra Fast <br /> Provably fair <br />
+          Capital Efficient 
+        </h1>
+      </section>
     </main>
   );
 }
