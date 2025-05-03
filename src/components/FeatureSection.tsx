@@ -1,3 +1,4 @@
+import Experience from "./Experience";
 import { Feature } from "./Feature";
 import { features } from "@/lib/constants";
 
@@ -7,6 +8,7 @@ export const FeatureSection = () => {
       {features.map((f, index) => (
         <Feature key={index} {...f} />
       ))}
+      <Experience/>
     </section>
   );
 }; 
